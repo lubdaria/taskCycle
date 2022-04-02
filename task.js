@@ -31,12 +31,18 @@ for (; b < 24;) {
 
 // 4 Вивести числа від 23 до 27 потів від 28 до 31
 
-let y = 23;
-for (; y < 32; y++ ) {
+
+for (let y = 23; y < 32; y++ ) {
   if ( y == 27) continue;
   console.log (y);
 };
 
+or 
+
+for (let y = 23; y < 32; y++) {
+  if (y !== 27) {console.log (y);}
+};
+ 
 // 5 Вивести числа, які ділять на 10 націло (кратні десяти) від 19 до 142
 
 let num = 19;
@@ -65,6 +71,20 @@ for (let letter of customer){
     console.log(letter);
 };
 
+// 2 Variant
+
+// let customer = "Dasha - zopa";
+// for (let f = 0; f < customer.length; f++) {
+//     console.log(customer[f]);
+// };
+
+// 3 Variant
+
+// let customer = "Dasha - zopa";
+// for (let f = 0; f < customer.length; f++) {
+//     console.log(customer.charAt(f));
+// };
+
 // 9 Вивести кожен символ строки із нового рядка, до того часу, поки символ не буде 'a' (Якщо слово - 'Vlad', то виведеться V, l)
 
 let userName = "Vlad - zopa";
@@ -76,6 +96,15 @@ for (let notA of userName) {
   }
 };
 
+// let userName = "Vlad - zopa";
+// for (let g = 0; g < userName.length; g++) {
+//   if (userName[g] !== "a") { 
+//     break;
+//   } else {
+//     console.log(userName[g]);
+//   }
+// };
+
 // 10 Вивести кожен символ строки, крім 'a', з нового рядка (Якщо слово - 'Vlad', то виведеться V, l, d)
 
 let userTwo = "Vlad - zopa";
@@ -86,6 +115,30 @@ for (let withA of userTwo) {
     console.log(withA);
   }
 };
+
+// 2 Variant 
+
+// let userTwo = "Vlad - zopa";
+// for (let withA of userTwo) {
+//   if (withA !== "a") { console.log(withA);
+//   }
+// };
+
+// 3 Variant 
+
+// let userName = "Vlad - zopa";
+// for (let withA = 0; withA < userName.length; withA++) {
+//   if (userName[withA] !== "a") { 
+//     console.log(userName[withA]);
+//   }
+// };
+
+// 4 Variant
+
+// let userName = "Vlad - zopa";
+// for (let notA of userName) {
+//   (notA == "a") ? false : console.log(notA);
+// }
 
 // 11 Аналогічно 10, тільки всі, крім 'a', 'b', 'c', 'd', 'e', 'f,' та 'A', 'B', 'C', 'D', 'E', 'F'
 
@@ -117,4 +170,14 @@ for (let key of addUpper) {
 // 4. Чи можна ще таких побільше задач, хочу ще порозв'язувати.
 // 5. Якщо є помилки, то краще скажи мені, будь ласка, що є помилки і я їх сама пошукаю і виправлю. Якщо не справлюсь, тоді запитаю.
 
-
+// Зроби за допомогою for
+// 2. Є, використай цикл for, там буде зрозуміло
+// 3. Можна, але в більшості випадків це виноситься в окремий метод. В даному випадку можна не виносити, а виправити по іншому, подумай як
+// Виправити:
+// 1. Всі задачі на строкі повинні бути виконані для всіх строк, які я написав зверху.
+// 2. Рішення задач 4(є), 9, 10(), 11, та 12 можна скоротити
+// P.S. В більшості випадків при використанні оператора 'if' ми використовуємо дужки {} ( як в прикладах 9, 10, 11, 12). 
+// Також в більшості випадків цикл for використовується як в першому варіанті. 
+// Також зроби ще такі задачі:
+//  '13. Для тим самих строк, які я писав після задач, вивести кожен символ через кому і пробіл. Приклад: 'Vlad' результат 'V, l, a, d'.
+//   14. Як і в 13, але всі символи у верхньому реєстрі. Результат: 'V, L, A, D'
