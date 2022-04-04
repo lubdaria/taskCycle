@@ -71,14 +71,14 @@ for (let letter of customer){
     console.log(letter);
 };
 
-// 2 Variant
+// 2 Version
 
 // let customer = "Dasha - zopa";
 // for (let f = 0; f < customer.length; f++) {
 //     console.log(customer[f]);
 // };
 
-// 3 Variant
+// 3 Version
 
 // let customer = "Dasha - zopa";
 // for (let f = 0; f < customer.length; f++) {
@@ -96,16 +96,28 @@ for (let notA of userName) {
   }
 };
 
+// 2 Version
+
 // let userName = "Vlad - zopa";
 // for (let g = 0; g < userName.length; g++) {
-//   if (userName[g] !== "a") { 
+//   if (userName[g] == "a") { 
 //     break;
 //   } else {
 //     console.log(userName[g]);
 //   }
 // };
 
-// 10 Вивести кожен символ строки, крім 'a', з нового рядка (Якщо слово - 'Vlad', то виведеться V, l, d)
+// 3 Version 
+
+// let userName = "Vlad - zopa";
+// for (let notA of userName) {
+//  if (notA == "a") {
+//     break; } {
+//       console.log(notA)
+//     }
+// };
+
+// // 10 Вивести кожен символ строки, крім 'a', з нового рядка (Якщо слово - 'Vlad', то виведеться V, l, d)
 
 let userTwo = "Vlad - zopa";
 for (let withA of userTwo) {
@@ -116,7 +128,7 @@ for (let withA of userTwo) {
   }
 };
 
-// 2 Variant 
+// 2 Version
 
 // let userTwo = "Vlad - zopa";
 // for (let withA of userTwo) {
@@ -124,7 +136,7 @@ for (let withA of userTwo) {
 //   }
 // };
 
-// 3 Variant 
+// 3 Version
 
 // let userName = "Vlad - zopa";
 // for (let withA = 0; withA < userName.length; withA++) {
@@ -133,14 +145,14 @@ for (let withA of userTwo) {
 //   }
 // };
 
-// 4 Variant
+// 4 Version
 
 // let userName = "Vlad - zopa";
 // for (let notA of userName) {
 //   (notA == "a") ? false : console.log(notA);
 // }
 
-// 11 Аналогічно 10, тільки всі, крім 'a', 'b', 'c', 'd', 'e', 'f,' та 'A', 'B', 'C', 'D', 'E', 'F'
+// // 11 Аналогічно 10, тільки всі, крім 'a', 'b', 'c', 'd', 'e', 'f,' та 'A', 'B', 'C', 'D', 'E', 'F'
 
 let addLetter = "adsdzfxfgchjkhgfdszsdxdcf43ws54ed6rf7g8h9jiophgbvcf879";
 for (let z of addLetter) {
@@ -150,6 +162,14 @@ for (let z of addLetter) {
     console.log(z);
   }
 };
+
+// 2 Version
+
+// let addLetter = "adsdzfxfgchjkhgfdszsdxdcf43ws54ed6rf7g8h9jiophgbvcf879";
+// for (let z of addLetter) {
+//  (z == 'a' || z == 'b' || z == 'c' || z == 'd' || z == 'e'|| z == 'f'|| z == 'A' || z == 'B' || z == 'C' || z == 'D'|| z == 'E'|| z == 'F' ) ? false : console.log(z);
+// };
+
 
 // 12 Вивести кожен символ строки із нового рядка, але, якщо цей символ 'a', 'b', 'c', 'd', 'f', то вивести його в верхньому реєстрі
 
@@ -161,6 +181,59 @@ for (let key of addUpper) {
     console.log(key);
    }
 };
+
+// 2 Version 
+
+// let addUpper = "Vlad - zopa";
+// for (let key of addUpper) {
+//   (key == 'a' || key == 'b' || key == 'c' || key == 'd' || key == 'f' ) ? console.log(key.toUpperCase()) : console.log(key);
+// };
+
+// 13. Для тим самих строк, які я писав після задач, вивести кожен символ через кому і пробіл. Приклад: 'Vlad' результат 'V, l, a, d'.
+
+let nameUser = "Vlad - zopa";
+for (let key of nameUser) {
+  addPoint(key)
+};
+
+// function addPoint(text) {
+//   if (key.){
+//    key = key + ", ";
+//   }
+// }
+
+
+
+// function addTextToElement(element, text) {
+//   element.textContect = text;
+// }
+
+// function addNewTextToElement(element, text) {
+//   if (element.textContect) {
+//     element.textContect = element.textContect + ", " + text;
+//     } else {
+//       element.textContect = text;
+//     }
+// }
+// let header = "Vlad";
+// let arrayObjects = "Dasha"
+  
+  
+//   for (const obj of arrayObjects) {
+//   addNewTextToElement(header, obj);
+// }
+
+//     nameUser.addPoint(name)
+
+// let nameUser = "Vlad - zopa";
+// for (let x = 0; x < nameUser.length; x++) {
+//   console.log (nameUser[x] + ", ");
+// }
+// let nameUser = "Vlad - zopa";
+// for (let x of nameUser) {
+//   console.log (x + ", ");
+// }
+
 
 
 // ASK.
